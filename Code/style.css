@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header start */
+.logo-box{
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.logo-box a{
+    text-decoration: none;
+}
+
+.logo-box:active{
+    box-shadow:inset 0px 0px 10px 5px #00adef;
+}
+
+.top-nav a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    position: relative;
+}
+
+.top-nav a:hover{
+    color:#00adef;
+    border-color:#00adef ;
+}
+
+.top-nav .nav-menu ul{
+    display: inline-block;
+}
+
+.top-nav .nav-menu li{
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.top-nav .nav-menu ul a:before{
+    position: absolute;
+    top: 120%;
+    right: 0%;
+    content: "";
+    width: 0%;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #00adef;
+    transition: ease 0.3s;
+}
+
+.top-nav .nav-menu a:hover:before{
+    width: 75%;
+}
+
+.top-nav .nav-menu ul a:after{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    content: "";
+    width:0%;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: ease 0.3s;
+}
+
+.top-nav .nav-menu ul a:hover::after{
+    width: 65%;
+}
+
+.top-nav button{
+    display: none;
+    background-color: #000;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.top-nav button:hover{
+    color: #00adef;
+}
+
+.menu{
+    overflow: hidden;
+    display: none;
+}
+
+.menu .modal-dialog{
+    height: 100%;
+    margin: 0;
+    margin-top:80px;
+    max-width: 100%;
+    background-color:black;
+}
+
+.menu .modal-content{
+    background-color: #000;
+}
+
+.menu .modal-header{
+    border: none;
+}
+
+.menu .modal-body ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.menu .modal-body ul li a:hover{
+    color: #00adef;
+}
+
+.top-nav .privacy a:nth-child(2){
+    border: 1px solid rgba(255, 255, 255, 60%);
+    display: none;
+    padding: 1px 8px;
+}
+
+/* header mediaquaries start */
+@media only screen and (max-width:650px){
+    .top-nav .privacy a:nth-child(1){
+        display: none;
+    }
+    .top-nav .privacy a:nth-child(2){
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:955px){
+    .top-nav .nav-menu ul{
+        display: none;
+    }
+    .top-nav button{
+        display: inline-block;
+    }
+    .menu .modal-dialog{
+    }
+}
+/* header mediaquaries end */
+/* header end */
