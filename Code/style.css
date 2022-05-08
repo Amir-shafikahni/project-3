@@ -350,7 +350,6 @@
 .collapse-itemes .row .col-12 div{
     position: relative;
     height: 100%;
-    overflow: hidden;
 }
 
 .collapse-itemes .row .col-12 div img{
@@ -360,21 +359,25 @@
 }
 
 @media only screen and (max-width:768px){
-    .collapse-itemes .row .col-12 div img{
-        margin-top: 60px;
+    .collapse-itemes .row .col-12 {
+        margin-bottom: 75px;
     }
     .collapse-itemes .row .col-12 .item-caption{
-        position: absolute;
-        width: 100%;
+        position:absolute;
+        width: 95%;
         height: 50px;
         bottom: -50px;
         left: 0;
+        margin-left: 20px;
         background-color: rgba(0, 0, 0, 25%);
         transition: height ease 0.3s, background-color ease 0.5s; 
     }
 }
 
 @media only screen and (min-width:768px){
+    .collapse-itemes .row .col-12 div{
+        overflow: hidden;
+    }
     .collapse-itemes .row .col-12 .item-caption{
         position: absolute;
         width: 100%;
@@ -385,15 +388,66 @@
         background-color: rgba(0, 0, 0, 25%);
     }
     .collapse-itemes .row .col-12 .item-caption p{
-        max-width: 90%;
+        max-width: 93%;
         opacity: 0;
         transition: 0.8s;
     }
     .collapse-itemes .row .col-12 div:hover .item-caption{
         background-color: rgba(0, 0, 0, 55%);
-        height: 110px;
+        height: 120px;
     }
     .collapse-itemes .row .col-12 div:hover .item-caption p{
         opacity: 1;
     } 
+}
+
+.body-end a{
+    color: #00adef;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.body-end a:hover{
+    text-decoration: 1px solid underline;
+}
+
+
+
+
+footer .col-12{
+    transition: 0.3s;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: rgba(153,153,153,1);
+    transition: 0.3s;
+}
+
+footer a{
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #00adef;
+}
+
+footer p{
+    color: rgba(153,153,153,1);
+
+}
+
+footer .footer-navbar p{
+    color: #00adef;
+}
+
+footer .footer-navbar ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+footer hr{
+    background-color:white;
 }
