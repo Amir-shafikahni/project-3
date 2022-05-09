@@ -456,66 +456,80 @@ footer hr{
     background-color:white;
 }
 
-.fixed-buttons-top{
+.top-fixed-first-button{
     position: fixed;
-    top: 150px;
-    right:0;
-    width: 100%;
+    top: 280px;
+    right: -170px;
     z-index: 100;
-    overflow: hidden;
-    width:350px;
-}
-
-.fixed-buttons-top .content{
-    transform: translateX(220px);
     transition: 0.5s;
-    display: inline-block;
-    margin-top: 1px;
-    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+    overflow: hidden;
     border-radius: 5px 0px 0px 5px;
 }
 
-.fixed-buttons-top .content:hover{
-    transform: translateX(0px);
+.top-fixed-second-button{
+    position: fixed;
+    top: 327px;
+    right: -168px;
+    z-index: 100;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px 0px 0px 5px;
 }
 
-.fixed-buttons-top .first-content{
-    padding-right: 47px;
+.top-fixed-third-button{
+    position: fixed;
+    top: 374px;
+    right: -217px;
+    z-index: 100;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px 0px 0px 5px;
 }
 
-.fixed-buttons-top .second-content{
-    padding-right: 49px;
+.top-fixed-first-button:hover{
+    right: 0;
 }
 
-footer .fixed-buttons-botton a:hover{
+.top-fixed-second-button:hover{
+    right: 0;
+}
+
+.top-fixed-third-button:hover{
+    right: 0;
+}
+
+.botton-fixed-buttons a:hover{
     color: white;
 }
 /* Footer mediaquaries start*/
 @media only screen and (max-width:768px){
-    footer .fixed-buttons-botton{
+    footer .botton-fixed-buttons{
         position: fixed;
         left: 0;
         bottom: 0;
         z-index: 100;
     }
-    footer .fixed-buttons-botton .col-4{
+    footer .botton-fixed-buttons .col-4{
         background-color: rgb(31, 31, 31);
         border-right: 1px solid black;
         border-left: 1px solid black;
     }
-    footer .fixed-buttons-botton .col-4 a{
+    footer .botton-fixed-buttons .col-4 a{
         padding-top: 100px;
     }
     footer .footer-copyright{
         margin-bottom: 80px;
     }
-    .fixed-buttons-top{
+    .top-fixed-first-button,.top-fixed-second-button,.top-fixed-third-button{
         display: none;
     }
 }
 
 @media only screen and (min-width:768px){
-    footer .fixed-buttons-botton{
+    footer .botton-fixed-buttons{
         display: none;
     }
 }
