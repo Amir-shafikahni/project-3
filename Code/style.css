@@ -172,19 +172,6 @@
     max-width: 350px;
 }
 
-@media only screen and (max-width:955px){
-    .slider1 .carousel-caption{
-        margin-top: 0px;
-        left: 10%;
-        top: 100%;
-        color: #000;
-        max-width: 600px;
-    }
-    .slider1 .carousel-inner{
-        overflow: visible;
-    }
-}
-
 .body-main-section{
     background-color: #000;
     transition: 0.3s;
@@ -231,30 +218,6 @@
     color: white;
 }
 
-@media only screen and (max-width:460px){
-    .body-main-section{
-        margin-top: 450px;
-    }
-}
-
-@media only screen and (min-width:460px){
-    .body-main-section{
-        margin-top: 400px;
-    }
-}
-
-@media only screen and (min-width:630px){
-    .body-main-section{
-        margin-top: 350px;
-    }
-}
-
-@media only screen and (min-width:955px){
-    .body-main-section{
-        margin-top: 0px;
-    }
-} 
-
 .body-main a{
     color: #00adef;
     text-decoration: none;
@@ -266,12 +229,6 @@
 
 .body-main button{
     transition: 0.3s;
-}
-
-@media only screen and (min-width:768px){
-    .body-main button{
-        width: 250px;
-    }
 }
 
 .body-main .row:nth-child(2){
@@ -330,15 +287,6 @@
     animation: fade-box 0.5s forwards 1;
 }
 
-@keyframes fade-box{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 .collapse-itemes .row .col-12{
     display: flex;
     padding: 0;
@@ -358,6 +306,54 @@
     width: 100%;
 }
 
+.body-end a{
+    color: #00adef;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.body-end a:hover{
+    text-decoration: 1px solid underline;
+}
+/* body mediaquuaries start */
+@media only screen and (max-width:955px){
+    .slider1 .carousel-caption{
+        margin-top: 0px;
+        left: 10%;
+        top: 100%;
+        color: #000;
+        max-width: 600px;
+    }
+    .slider1 .carousel-inner{
+        overflow: visible;
+    }
+}
+@media only screen and (max-width:460px){
+    .body-main-section{
+        margin-top: 450px;
+    }
+}
+@media only screen and (min-width:460px){
+    .body-main-section{
+        margin-top: 400px;
+    }
+}
+@media only screen and (min-width:630px){
+    .body-main-section{
+        margin-top: 350px;
+    }
+}
+@media only screen and (min-width:955px){
+    .body-main-section{
+        margin-top: 0px;
+    }
+} 
+@media only screen and (min-width:768px){
+    .body-main button{
+        width: 250px;
+    }
+}
+
 @media only screen and (max-width:768px){
     .collapse-itemes .row .col-12 {
         margin-bottom: 75px;
@@ -373,7 +369,6 @@
         transition: height ease 0.3s, background-color ease 0.5s; 
     }
 }
-
 @media only screen and (min-width:768px){
     .collapse-itemes .row .col-12 div{
         overflow: hidden;
@@ -400,20 +395,20 @@
         opacity: 1;
     } 
 }
-
-.body-end a{
-    color: #00adef;
-    text-decoration: none;
-    transition: 0.3s;
+/* body mediaquuaries end */
+/* body Keyfraems start */
+@keyframes fade-box{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
+/* body Keyframes end */
+/* body end */
 
-.body-end a:hover{
-    text-decoration: 1px solid underline;
-}
-
-
-
-
+/* Footer start */
 footer .col-12{
     transition: 0.3s;
 }
@@ -436,7 +431,16 @@ footer a:hover{
 
 footer p{
     color: rgba(153,153,153,1);
+}
 
+footer .social-media i{
+    color: rgba(153,153,153,1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .social-media i:hover{
+    color: #00adef;
 }
 
 footer .footer-navbar p{
@@ -451,3 +455,69 @@ footer .footer-navbar ul li{
 footer hr{
     background-color:white;
 }
+
+.fixed-buttons-top{
+    position: fixed;
+    top: 150px;
+    right:0;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+    width:350px;
+}
+
+.fixed-buttons-top .content{
+    transform: translateX(220px);
+    transition: 0.5s;
+    display: inline-block;
+    margin-top: 1px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.fixed-buttons-top .content:hover{
+    transform: translateX(0px);
+}
+
+.fixed-buttons-top .first-content{
+    padding-right: 47px;
+}
+
+.fixed-buttons-top .second-content{
+    padding-right: 49px;
+}
+
+footer .fixed-buttons-botton a:hover{
+    color: white;
+}
+/* Footer mediaquaries start*/
+@media only screen and (max-width:768px){
+    footer .fixed-buttons-botton{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+    }
+    footer .fixed-buttons-botton .col-4{
+        background-color: rgb(31, 31, 31);
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    footer .fixed-buttons-botton .col-4 a{
+        padding-top: 100px;
+    }
+    footer .footer-copyright{
+        margin-bottom: 80px;
+    }
+    .fixed-buttons-top{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px){
+    footer .fixed-buttons-botton{
+        display: none;
+    }
+}
+/* Footer mediaquaries end*/
+/* Footer end */
